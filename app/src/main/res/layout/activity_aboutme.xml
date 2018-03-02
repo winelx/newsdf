@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/writer">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark">
+
+        <com.joanzapata.iconify.widget.IconTextView
+            android:id="@+id/com_back"
+            android:layout_width="45dp"
+            android:layout_height="35dp"
+            android:layout_alignBottom="@+id/com_title"
+            android:layout_gravity="center|start"
+            android:gravity="center"
+            android:padding="0dp"
+            android:text="{fa-angle-left}"
+            android:textColor="@color/writer"
+            android:textSize="30sp" />
+
+
+        <TextView
+            android:id="@+id/com_title"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="关于我们"
+            android:textColor="@color/writer"
+            android:textSize="18sp" />
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:src="@mipmap/about_we" />
+
+    <LinearLayout
+        android:id="@+id/lin"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_below="@+id/login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="当前版本: V"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="1.0"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lin"
+        android:layout_margin="25dp"
+        android:text="@string/about_us"
+        android:textColor="@color/textViwe"
+        android:textSize="15sp"
+        android:lineSpacingExtra="3dp"
+        android:lineSpacingMultiplier="1.2" />
+
+</RelativeLayout>

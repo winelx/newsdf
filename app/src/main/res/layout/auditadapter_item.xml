@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="7dp"
+    android:layout_marginLeft="55dp"
+    android:background="@color/writer"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/audi_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="李白"
+        android:textColor="@color/blue"
+        android:textSize="13sp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:text="回复"
+        android:textColor="@color/textViwe"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/adui_user_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="杜甫"
+        android:textColor="@color/blue"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/audi_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="杜甫横忙"
+        android:textSize="13sp" />
+
+</LinearLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar"></include>
+
+    <RelativeLayout
+        android:id="@+id/pchoose_atlas"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@color/writer">
+
+        <ImageView
+            android:id="@+id/pchoose_atlas_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@mipmap/fr_wrok_nodew" />
+
+        <TextView
+            android:id="@+id/mine_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@+id/pchoose_atlas_img"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/pchoose_atlas_img"
+            android:layout_toRightOf="@+id/pchoose_atlas_img"
+            android:text="节点信息配置"
+            android:textColor="#323232" />
+
+        <com.joanzapata.iconify.widget.IconTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/mine_text2"
+            android:layout_marginRight="15dp"
+            android:text="{fa-angle-right}"
+            android:textColor="@color/inconfy"
+            android:textSize="30sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/back"></View>
+
+    <RelativeLayout
+        android:id="@+id/pchoose_wbs"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@color/writer">
+
+        <ImageView
+            android:id="@+id/pchoose_wbs_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@mipmap/fr_wrok_push_miss" />
+
+        <TextView
+            android:id="@+id/pchoose_wbs_text"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@+id/pchoose_wbs_img"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/pchoose_wbs_img"
+            android:layout_toRightOf="@+id/pchoose_wbs_img"
+            android:text="任务下发"
+            android:textColor="#323232" />
+
+        <com.joanzapata.iconify.widget.IconTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/pchoose_wbs_text"
+            android:layout_marginRight="15dp"
+            android:text="{fa-angle-right}"
+            android:textColor="@color/inconfy"
+            android:textSize="30sp" />
+    </RelativeLayout>
+
+</LinearLayout>

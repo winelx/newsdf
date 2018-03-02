@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/writer"
+    android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/audio_acathor"
+        android:layout_width="45dp"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/audio_name"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:background="@mipmap/mine_avatar" />
+
+    <TextView
+        android:id="@+id/audio_name"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="19dp"
+        android:layout_toEndOf="@+id/audio_acathor"
+        android:layout_toRightOf="@+id/audio_acathor"
+        android:text="李白"
+        android:textColor="@color/blue"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/audio_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/audio_name"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="15dp"
+        android:text="2017-12-10"
+        android:textColor="@color/editext_text"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/audio_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/audio_name"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_toEndOf="@+id/audio_acathor"
+        android:layout_toRightOf="@+id/audio_acathor"
+        android:text="打扫打扫所多所多的方法方法方法方法反反复复反反复复方法反反复复反反复复方法反反复复反反复复方法反反复复反反复复"
+        android:textColor="@color/textViwe"
+        android:textSize="13sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/audio_rec"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignLeft="@+id/audio_content"
+        android:layout_alignStart="@+id/audio_content"
+        android:layout_below="@+id/audio_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/audio_rec"
+        android:layout_alignStart="@+id/audio_rec"
+        android:layout_below="@+id/audio_rec"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/view_positioning" />
+
+        <TextView
+            android:id="@+id/audio_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:text="贵阳市花溪区"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/audio_data_comm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout3"
+        android:layout_alignStart="@+id/linearLayout3"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_marginRight="20dp"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_gravity="end|center"
+            android:background="@mipmap/message" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center"
+            android:layout_marginLeft="5dp"
+            android:text="评论"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/audio_data_commom_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center"
+            android:layout_marginLeft="5dp"
+            android:text="0"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark">
+
+        <com.joanzapata.iconify.widget.IconTextView
+            android:id="@+id/com_back"
+            android:layout_width="45dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center|start"
+            android:gravity="center"
+            android:text="@string/fa_angle_left"
+            android:textColor="@color/writer"
+            android:textSize="30sp" />
+
+
+        <TextView
+            android:id="@+id/com_title"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/setting"
+            android:textColor="@color/writer"
+            android:textSize="20sp" />
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/setting_disturb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/writer">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="接收新消息通知"
+                android:textColor="@color/textViwe"
+                android:textSize="15sp" />
+
+            <Switch
+                android:id="@+id/setting_new_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:switchMinWidth="55dp"
+                android:thumb="@drawable/switch_selector"
+                android:track="@drawable/switch_track" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/setting_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/back" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:background="@color/writer">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/message_details"
+                    android:textColor="@color/textViwe"
+                    android:textSize="15sp" />
+
+                <Switch
+                    android:id="@+id/setting_message_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:switchMinWidth="55dp"
+
+                    android:thumb="@drawable/switch_selector"
+                    android:track="@drawable/switch_track" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/back" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:background="@color/writer">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/voice"
+                    android:textColor="@color/textViwe"
+                    android:textSize="15sp" />
+
+                <Switch
+                    android:id="@+id/setting_voice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:switchMinWidth="55dp"
+                    android:textOff=""
+                    android:textOn=""
+                    android:thumb="@drawable/switch_selector"
+                    android:track="@drawable/switch_track" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:background="@color/writer">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/vibration"
+                    android:textColor="@color/textViwe"
+                    android:textSize="15sp" />
+
+                <Switch
+                    android:id="@+id/setting_vibration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:switchMinWidth="55dp"
+                    android:thumb="@drawable/switch_selector"
+                    android:track="@drawable/switch_track" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/back" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@color/writer">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="@string/not_disturb"
+            android:textColor="@color/textViwe"
+            android:textSize="15sp" />
+
+        <Switch
+            android:id="@+id/setting_not_disturb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:switchMinWidth="55dp"
+
+            android:thumb="@drawable/switch_selector"
+            android:track="@drawable/switch_track" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/back" />
+
+
+</LinearLayout>

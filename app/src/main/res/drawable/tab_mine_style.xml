@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--state_pressed="true/false" true:表示按下状态使用，false表示非按下状态使用-->
+    <!--stat_focused="true/false" ture表示聚焦状态是使用（例如使用滚动求/D-pad聚焦Buton），false表示非聚焦状态下使用-->
+    <!--state_selected ture 表示选中状态下使用，false表示非选择中状态-->
+    <!--state_active ture 表示可勾选时状态使用，false表示不可勾选状态下使用-->
+    <!--state_checkable ture表示勾选状态下使用。false表示非勾选状态下使用-->
+    <!--state_window_focused true 表示应用程序窗口有焦点时使用，false表示无焦点时使用-->
+
+    <item android:drawable="@mipmap/mine" android:state_focused="false" android:state_pressed="false" android:state_selected="false" />
+    <item android:drawable="@mipmap/mine_in" android:state_focused="false" android:state_pressed="false" android:state_selected="true" />
+
+    <item android:drawable="@mipmap/mine_in" android:state_focused="true" android:state_pressed="false" android:state_selected="false" />
+    <item android:drawable="@mipmap/mine_in" android:state_focused="true" android:state_pressed="true" android:state_selected="false" />
+
+    <item android:drawable="@mipmap/mine_in" android:state_pressed="true" android:state_selected="false" />
+    <item android:drawable="@mipmap/mine_in" android:state_pressed="true" />
+
+
+</selector>

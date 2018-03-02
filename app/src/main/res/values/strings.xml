@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">工程管理</string>
+    <string name="home">任务</string>
+    <string name="mine">我的</string>
+    <string name="work">工作</string>
+    <string name="about_us">工程管理系统主要是路桥公司为了能对施工过程进行严格管控，对进度、技术、质量、安全、文明施工等一系列的施工过程做到实时监控而开发的一个平台。同时更好地保障工地员工实时的进行举证证明施工过程的规范性、安全性、按时性等。整个过程充分体现了”谁负责，谁举证“这一原则。</string>
+    <string name="meun_one">选择WBS结构</string>
+    <string name="meun_two">未处理消息</string>
+    <string name="meun_three">已处理消息</string>
+    <string name="title_activity_missionadd">MissionaddActivity</string>
+    <string name="title_activity_missionpush">MissionpushActivity</string>
+    <string name="sdcard_no_exist">SD卡不存在</string>
+    <string name="camera_not_prepared">摄像头尚未准备好</string>
+    <string name="cancel_value">取消</string>
+    <string name="permission_request_error">"申请权限失败"</string>
+    <string name="permission_storage">登录需要读写内存权限，被您拒绝或者系统发生错误申请失败，请您到权限设置页面手动授权，否则功能无法正常使用！</string>
+    <string name="permission_image">我们需要拍照和读写内存权限的被您拒绝或者系统发生错误申请失败，请您到权限设置页面手动授权，否则功能无法正常使用！</string>
+    <string name="permission_cus_item_phone">如果您想直接拨打电话，请选择同意</string>
+
+
+    <string name="header_hint_refresh_normal">下拉刷新数据</string>
+    <string name="header_hint_refresh_ready">取消刷新</string>
+    <string name="header_hint_refresh_loading">加载数据中&#8230;</string>
+    <string name="header_hint_refresh_time"></string>
+    <string name="footer_hint_load_normal">加载更多数据</string>
+    <string name="footer_hint_load_ready">释放加载更多</string>
+    <string name="text_nupoint">当前界面没有数据</string>
+    <string name="text_okgo_error">网络请求失败</string>
+    <string name="camera_pop_camera">拍摄</string>
+    <string name="camera_pop_album">从相册选择</string>
+    <string name="camera_pop_cancel">取消</string>
+    <string name="fa_angle_left">{fa-angle-left}</string>
+    <string name="vibration">震动</string>
+    <string name="not_disturb">勿扰模式</string>
+    <string name="voice">声音</string>
+    <string name="setting">系统设置</string>
+    <string name="message_details">通知显示详情</string>
+
+
+</resources>

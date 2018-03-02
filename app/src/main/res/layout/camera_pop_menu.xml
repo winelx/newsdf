@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/btn_pop_add"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_camera_pop_camera"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/pop_first_selector"
+                android:text="@string/camera_pop_camera"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/back"></View>
+
+            <Button
+                android:id="@+id/btn_camera_pop_album"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/pop_last_selector"
+                android:text="@string/camera_pop_album"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btn_camera_pop_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/pop_single_selector"
+                android:text="@string/camera_pop_cancel"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

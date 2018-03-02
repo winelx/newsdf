@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_ground">
+
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimaryDark">
+
+                <LinearLayout
+                    android:id="@+id/com_back"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start|left"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.joanzapata.iconify.widget.IconTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center|start"
+                        android:gravity="center"
+                        android:paddingLeft="15dp"
+                        android:text="{fa-angle-left}"
+                        android:textColor="@color/writer"
+                        android:textSize="30sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/com_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/writer"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/com_button"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center|end"
+                    android:layout_marginRight="15dp"
+                    android:textColor="@color/writer"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/com_img"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center|end"
+                    android:layout_marginRight="15dp"></ImageView>
+
+            </android.support.v7.widget.Toolbar>
+
+            <LinearLayout
+                android:id="@+id/LIn_all"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_below="@+id/toolbar"
+                android:layout_marginTop="50dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/lin_sdfg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/toolbar"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/reply_wbs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/writer"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@mipmap/mession_add" />
+
+                        <TextView
+                            android:id="@+id/wbs_text"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="8"
+                            android:paddingLeft="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <com.joanzapata.iconify.widget.IconTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|end"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:gravity="end"
+                            android:text="{fa-angle-right}"
+                            android:textSize="25sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/back"></View>
+
+                    <LinearLayout
+                        android:id="@+id/reply_check"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@color/writer"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="15dp"
+                            android:background="@mipmap/new_check" />
+
+                        <TextView
+                            android:id="@+id/reply_check_item"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="8"
+                            android:hint="选择检查内容（不选则为自定义）"
+                            android:paddingLeft="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <com.joanzapata.iconify.widget.IconTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|end"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:gravity="end"
+                            android:text="{fa-angle-right}"
+                            android:textSize="25sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Progess"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lin_sdfg"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tvNetSpeed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15sp"
+                        android:text="已上传/上传资料大小"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/tvDownloadSize"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:text="sss"
+                        android:textSize="10sp"
+                        android:visibility="gone" />
+
+                    <ProgressBar
+                        android:id="@+id/reply_bar"
+                        style="@android:style/Widget.ProgressBar.Horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15sp"
+                        android:layout_marginTop="5dp" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Progess"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/writer"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/reply_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@null"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:gravity="start|top"
+                        android:hint="请输入具体内容描述"
+                        android:minLines="5"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:id="@+id/locaton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/reply_text"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/address"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="15dp"
+                            android:src="@mipmap/reply_positioning" />
+
+                        <TextView
+                            android:id="@+id/repley_address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text=""
+                            android:textColor="@color/persomal_text"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/locaton"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="3dp"
+                        android:text="！每张图片大约200k左右,请注意你的流量"
+                        android:textSize="13sp" />
+
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycler_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="5dp" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/fabloating"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="45dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginStart="24dp"
+                android:src="@mipmap/drawphoto"
+                app:backgroundTint="#00B4FF"
+                app:fabSize="auto"
+                app:rippleColor="#56abe4" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="220dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="left"
+            android:background="@color/writer">
+
+            <com.scwang.smartrefresh.layout.SmartRefreshLayout
+                android:id="@+id/SmartRefreshLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ListView
+                    android:id="@+id/drawer_layout_list"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@color/back"
+                    android:dividerHeight="1px"
+                    android:scrollbars="none" />
+
+                <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp" />
+            </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.DrawerLayout>
+
+</RelativeLayout>

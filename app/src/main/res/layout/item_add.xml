@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.example.administrator.newsdf.utils.SquareItemLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="70dp"
+    android:layout_height="70dp"
+    android:layout_marginTop="10dp">
+
+    <ImageView
+        android:id="@+id/bt_add"
+        android:layout_width="70dp"
+        android:padding="10dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:background="@mipmap/add_photo" />
+
+
+</com.example.administrator.newsdf.utils.SquareItemLayout>
+

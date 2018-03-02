@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark">
+
+        <com.joanzapata.iconify.widget.IconTextView
+            android:id="@+id/com_back"
+            android:layout_width="45dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center|start"
+            android:gravity="center"
+            android:text="{fa-angle-left}"
+            android:textColor="@color/writer"
+            android:textSize="30sp" />
+
+
+        <TextView
+            android:id="@+id/com_title"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="个人信息"
+            android:textColor="@color/writer"
+            android:textSize="20sp" />
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/projectmember"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/writer">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="头像"
+            android:textColor="@color/textViwe"
+            android:textSize="15sp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgage_user"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:src="@mipmap/mine_avatar" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/back"></View>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@color/writer">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="名字"
+            android:textColor="@color/textViwe"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
+            android:text="夏末"
+            android:textColor="@color/persomal_text"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/back"></View>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@color/writer">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="所属组织"
+            android:textColor="@color/textViwe"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/checkname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
+            android:text="三独一标"
+            android:textColor="@color/persomal_text"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/back"></View>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@color/writer">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="岗位"
+            android:textColor="@color/textViwe"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
+            android:text="安全"
+            android:textColor="@color/persomal_text"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/back"></View>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@color/writer">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="手机号码"
+            android:textColor="@color/textViwe"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/userPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
+            android:text="夏末"
+            android:textColor="@color/persomal_text"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/writer"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:id="@+id/title_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tab_str"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:ellipsize="end"
+            android:maxEms="14"
+            android:maxLines="1"
+            android:text="sdg"
+            android:textColor="@color/textViwe"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tab_statu2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tab_str"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tab_str"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/writer"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tab_content"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/title_ll"
+        android:layout_marginLeft="10dp"
+
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="请及时上传安装盖板的相关请及时上传安装盖板的相关资料资料"
+        android:textSize="13sp" />
+
+    <LinearLayout
+        android:id="@+id/image_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tab_content"
+        android:layout_alignStart="@+id/tab_content"
+        android:layout_below="@+id/tab_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/tab_usr_img"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@mipmap/list_tab_avther" />
+
+        <TextView
+            android:id="@+id/tab_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tab_usr_img"
+            android:layout_alignTop="@+id/tab_fixed_tiem"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/tab_usr_img"
+            android:layout_toRightOf="@+id/tab_usr_img"
+            android:text="负责人"
+            android:textColor="#999999"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignTop="@+id/tab_user"
+            android:layout_marginLeft="20dp"
+            android:layout_toEndOf="@+id/tab_user"
+            android:layout_toRightOf="@+id/tab_user"
+            android:background="@mipmap/list_tab_time"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tab_fixed_tiem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tab_usr_img"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/imageView2"
+            android:layout_toRightOf="@+id/imageView2"
+            android:text="截止时间"
+            android:textColor="#999999"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tab_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tab_content"
+        android:layout_alignEnd="@+id/tab_time"
+        android:layout_alignRight="@+id/tab_time"
+        android:text="回复"
+        android:textColor="@color/Orange"
+        android:textSize="15sp"
+        android:visibility="invisible" />
+
+
+    <TextView
+        android:id="@+id/tab_time"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tab_view"
+        android:layout_marginEnd="21dp"
+        android:layout_marginRight="21dp"
+        android:layout_marginTop="8dp"
+        android:gravity="end"
+        android:text="3小时前"
+        android:textColor="#999999"
+        android:textSize="10sp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,8 @@
+/build
+proguard-rules.pro
+/locak,propertise
+/.idea/workspace.xml
+/.idea/libraries
+/DS_Store
+/build
+.idea

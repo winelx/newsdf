@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5096F8</color>
+    <color name="colorPrimaryDark">#5096F8</color>
+    <color name="colorAccent">#5096F8</color>
+    <color name="back_ground">#e3e1e1</color>
+    <color name="back">#F0F0F0</color>
+    <color name="writer">#fff</color>
+    <color name="inconfy">#e2c1bfc1</color>
+    <color name="textViwe">#323232</color>
+    <color name="editext_text">#999797</color>
+    <color name="persomal_text">#808080</color>
+    <color name="view">#c2c2c2</color>
+    <color name="inter_background">#FFDFDF</color>
+    <color name="inter_text">#543434</color>
+    <color name="Orange">#f88c37</color>
+
+    <color name="red">#f44949</color>
+    <color name="green">#3eec09</color>
+    <color name="black">#050505</color>
+    <color name="blue">#167fe1</color>
+    <color name="gray">#cccccc</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="__picker_item_photo_border_selected">#ff99cc00</color>
+    <color name="__picker_item_photo_border_n">#33ffffff</color>
+
+    <color name="finish_green">#22c67b</color>
+    <color name="unfinish_gray">#a6a6a6</color>
+    <color name="light_blue">#ccf0fd</color>
+    <color name="colorD9E6FD">#D9E6FD</color>
+    <color name="color646464">#646464</color>
+
+    <color name="background">#F7F4F0</color>
+    <color name="title_color">#333333</color>
+</resources>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:background="@color/writer">
+
+    <RelativeLayout
+        android:id="@+id/recycler_view"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tab_str"
+            android:layout_width="220dp"
+            android:layout_height="20dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="请及时上传安装盖板的相关请及时上传安装盖板的相关资料资料"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:padding="0dp"
+            android:layout_above="@+id/tab_checkBox"
+            android:layout_alignLeft="@+id/tab_usr_img"
+            android:layout_alignStart="@+id/tab_usr_img" />
+
+
+        <TextView
+            android:padding="0dp"
+            android:id="@+id/tab_content"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="请及时上传安装盖板的相关请及时上传安装盖板的相关资料资料"
+            android:textSize="13sp"
+            android:layout_below="@+id/tab_str"
+            android:layout_alignLeft="@+id/tab_str"
+            android:layout_alignStart="@+id/tab_str" />
+
+        <ImageView
+            android:id="@+id/tab_usr_img"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tab_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="3dp"
+            android:background="@mipmap/list_tab_avther" />
+
+        <TextView
+            android:id="@+id/tab_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tab_usr_img"
+            android:layout_alignTop="@+id/tab_fixed_tiem"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/tab_usr_img"
+            android:layout_toRightOf="@+id/tab_usr_img"
+            android:text="负责人"
+            android:textColor="#999999"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:id="@+id/tab_fixed_tiem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="推送次数"
+            android:textColor="#999999"
+            android:textSize="12sp"
+            android:drawableLeft="@mipmap/time"
+            android:drawablePadding="5dp"
+            android:layout_alignBaseline="@+id/tab_fixed_number"
+            android:layout_alignBottom="@+id/tab_fixed_number"
+            android:layout_alignRight="@+id/tab_content"
+            android:layout_alignEnd="@+id/tab_content"
+            android:layout_marginRight="48dp"
+            android:layout_marginEnd="48dp" />
+
+        <TextView
+            android:id="@+id/tab_fixed_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tab_usr_img"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/tab_fixed_tiem"
+            android:layout_toRightOf="@+id/tab_fixed_tiem"
+            android:text="推送次数"
+            android:textColor="#999999"
+            android:textSize="12sp" />
+
+
+        <CheckBox
+            android:id="@+id/tab_checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

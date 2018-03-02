@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_ground"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimaryDark">
+
+
+                <com.joanzapata.iconify.widget.IconTextView
+                    android:id="@+id/newpush_back"
+                    android:layout_width="45dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center|start"
+                    android:gravity="center"
+                    android:text="{fa-angle-left}"
+                    android:textColor="@color/writer"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/newpush_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="ssss"
+                    android:textColor="@color/writer"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/newpush_button"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center|end"
+                    android:layout_marginRight="15dp"
+                    android:gravity="center"
+                    android:text="推送"
+                    android:textColor="@color/writer"
+                    android:textSize="15sp" />
+
+
+            </android.support.v7.widget.Toolbar>
+
+            <LinearLayout
+                android:id="@+id/newpush_wbs_lin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbar"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/newpush_wbs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/writer"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@mipmap/mession_add" />
+
+                    <TextView
+                        android:id="@+id/newpush_text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="8"
+                        android:text="默认上部结构（wbs结构）"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <com.joanzapata.iconify.widget.IconTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|end"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:text="{fa-angle-right}"
+                        android:textSize="25sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/back"></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/writer"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:background="@mipmap/new_check" />
+
+                    <EditText
+                        android:id="@+id/newpush_check"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="8"
+                        android:background="@null"
+                        android:hint="输入任务名称（必填）"
+                        android:padding="10dp"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <com.joanzapata.iconify.widget.IconTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|end"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:textSize="25sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/back"></View>
+
+                <LinearLayout
+                    android:id="@+id/newpush_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/writer"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:background="@mipmap/alone_push" />
+
+                    <TextView
+                        android:id="@+id/push_username"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="8"
+                        android:hint="选择负责人"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <com.joanzapata.iconify.widget.IconTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|end"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:text="{fa-angle-right}"
+                        android:textSize="25sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_below="@+id/newpush_wbs_lin"
+                android:layout_marginTop="10dp"
+                android:background="@color/writer"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/push_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@null"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:hint="请输入具体推送内容"
+                    android:textColor="@color/editext_text"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/fab"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="45dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginStart="24dp"
+                android:src="@mipmap/drawphoto"
+                app:backgroundTint="#00B4FF"
+                app:fabSize="auto"
+                app:rippleColor="#56abe4" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="220dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_marginTop="50dp"
+            android:background="#fff">
+
+            <com.scwang.smartrefresh.layout.SmartRefreshLayout
+                android:id="@+id/drawerLayout_smart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ListView
+                    android:id="@+id/drawer_layout_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:divider="@color/back"
+                    android:dividerHeight="1px"
+                    android:scrollbars="none" />
+
+
+                <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp" />
+            </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>

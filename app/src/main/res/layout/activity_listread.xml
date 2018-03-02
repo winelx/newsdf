@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_wbs"></include>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/com_content"
+        android:background="@color/writer"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/details_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:gravity="center"
+                android:text="技术：盖板安装"
+                android:textColor="@color/textViwe"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/details_title_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:padding="3dp"
+                android:textColor="@color/writer"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/details_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/details_title"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:text="2017-03-12"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/details_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/details_data"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="14dp"
+            android:text="请及时上传资料请及资料请及时上传资料"
+            android:textColor="@color/textViwe"
+            android:textSize="13sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="14dp"
+            android:background="@color/back"></View>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/details_fixed_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="转交人:"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/details_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/details_content"
+                android:layout_marginLeft="10dp"
+                android:text="哈哈哈哈哈"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/details_fixed_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="截止时间:"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/details_end_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="2017--12-30 12:00"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/details_fixed_boolean"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="状态:"
+                android:textSize="13sp" />
+
+
+            <TextView
+                android:id="@+id/details_boolean"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="未上传"
+                android:textColor="@color/Orange"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/read_button"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_style"
+        android:text="已阅读"
+        android:textColor="@color/blue"
+        android:textSize="13sp" />
+
+</LinearLayout>

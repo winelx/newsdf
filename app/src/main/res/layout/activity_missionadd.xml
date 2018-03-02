@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_wbs"></include>
+
+    <LinearLayout
+        android:id="@+id/Lin_WBS"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/writer"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:background="@mipmap/mession_add" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="8"
+            android:text="上部结构构造(默认WBS结构，可选择)"
+            android:textSize="15sp" />
+
+        <com.joanzapata.iconify.widget.IconTextView
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="{fa-angle-right}"
+            android:textColor="@color/gray"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray"></View>
+
+    <LinearLayout
+        android:id="@+id/Lin_check"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/writer"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:background="@mipmap/new_check" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="8"
+            android:text="上部结构构造(默认WBS结构，可选择)"
+            android:textColor="@color/inconfy"
+            android:textSize="15sp" />
+
+        <com.joanzapata.iconify.widget.IconTextView
+            android:id="@+id/iconTextView"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="{fa-angle-right}"
+            android:textColor="@color/gray"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/writer"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:hint="saaaaaaaaa"
+            android:textColor="@color/textViwe"
+            android:textColorHint="@color/gray"
+            android:textSize="15sp" />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/mission_rec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="80dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@mipmap/localize_blue" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:text="贵阳市南明区"
+                android:textColor="@color/textViwe"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

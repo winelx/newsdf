@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_wbs" />
+
+    <include layout="@layout/handover_message"></include>
+
+    <include layout="@layout/handover_content"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/writer"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/text_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="图片" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_photo"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="15dp" />
+
+        <TextView
+            android:id="@+id/text_att"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:text="图片" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_att"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="15dp" />
+
+    </LinearLayout>
+</LinearLayout>

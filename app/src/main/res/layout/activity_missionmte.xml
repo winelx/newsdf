@@ -1,0 +1,160 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back"
+    android:orientation="vertical">
+
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@color/colorPrimaryDark">
+
+                <com.joanzapata.iconify.widget.IconTextView
+                    android:id="@+id/com_back"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center|start"
+                    android:gravity="center"
+                    android:text="{fa-angle-left}"
+                    android:textColor="@color/writer"
+                    android:textSize="30sp" />
+
+
+                <TextView
+                    android:id="@+id/com_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="组织管理"
+                    android:textColor="@color/writer"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:id="@+id/tenac_img"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center|end">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="13dp"
+                        android:background="@mipmap/toolbar_add"
+                        android:padding="20dp"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+
+            </android.support.v7.widget.Toolbar>
+
+            <LinearLayout
+                android:id="@+id/tab_lin"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/toolbar"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tl_tab"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="9"
+                    app:tabBackground="@color/writer"
+                    app:tabIndicatorColor="@color/colorAccent"
+                    app:tabMode="fixed"
+                    app:tabSelectedTextColor="@color/colorPrimaryDark"
+                    app:tabTextColor="@color/colorPrimary" />
+
+                <RelativeLayout
+                    android:id="@+id/tabulation"
+                    android:layout_width="0dp"
+                    android:background="@color/writer"
+                    android:layout_height="40dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerInParent="true"
+                        android:background="@mipmap/list_tab_tablist"
+                        android:padding="20dp" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/tab_lin" />
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/fab"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="45dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginStart="24dp"
+                android:src="@mipmap/drawphoto"
+                app:backgroundTint="#00B4FF"
+                app:fabSize="auto"
+                app:rippleColor="#56abe4" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="220dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_marginTop="50dp"
+            android:background="#fff">
+
+            <com.scwang.smartrefresh.layout.SmartRefreshLayout
+                android:id="@+id/drawerLayout_smart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ListView
+                    android:id="@+id/drawer_layout_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:divider="@color/back"
+                    android:dividerHeight="1px"
+                    android:scrollbars="none" />
+
+                <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp" />
+            </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+        </LinearLayout>
+    </android.support.v4.widget.DrawerLayout>
+
+
+</LinearLayout>

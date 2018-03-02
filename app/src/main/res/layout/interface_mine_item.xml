@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/item_inface_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="15dp"
+        android:background="#e4c2c2c2"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="3月10日 09:12"
+        android:textColor="@color/writer"
+        android:textSize="13sp" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:padding="0dp"
+        app:cardCornerRadius="4dp">
+
+
+        <RelativeLayout
+            android:id="@+id/inter_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/writer">
+
+            <TextView
+                android:id="@+id/inter_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="技术：安装盖板"
+                android:textColor="@color/inter_text"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/item_inface_remind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/inter_title"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_toEndOf="@+id/inter_title"
+                android:layout_toRightOf="@+id/inter_title"
+                android:textColor="@color/writer"
+                android:textSize="10sp" />
+
+
+            <TextView
+                android:id="@+id/inter_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inter_title"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="2017-03-01"
+                android:textColor="@color/editext_text"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/inter_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inter_data"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:text="请及时上传标段工程安装的详细资料请及时上传标段工程安装的详细资料请及时上传标段工程安装的详细资料请及时上传标段工程安装的详细资料请及时上传标段工程安装的详细资料"
+                android:textColor="@color/inter_text"
+                android:textSize="13sp" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/inter_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/back" />
+
+            <TextView
+                android:id="@+id/inter_text"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/view"
+                android:gravity="center"
+                android:text="点击上传"
+                android:textColor="@color/inter_text"
+                android:textSize="13sp" />
+
+            <com.example.administrator.newsdf.utils.SlantedTextView
+                android:id="@+id/home_item_message"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentRight="true"
+                app:slantedLength="28dp"
+                app:slantedMode="right_triangle"
+                app:slantedText="未完成"
+                app:slantedTextSize="10sp" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>
